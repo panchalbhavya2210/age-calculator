@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Age Calculator</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="h1">
+    <h1>Age <br> Calculator</h1>
+  </div>
+  <div class="divMain-hd">
+    <div class="subDiv-hd">
+      <br>
+      <text class="label">Select birth date</text>
+      <br><br>
+      <input type="date" id="birthDate" class="birthDate date">
+      <br><br>
+      <text class="label">Today's Date</text>
+      <br><br>
+      <input type="date" id="todayDate" class="todayDate date">
+
+      <div class="button">
+        <button class="submit" id="submitDate">
+          <span class="emptySpan">
+            <img src="/importicons/arrow-right.svg">
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="resultDiv-m">
+      <div class="resultDiv-s">
+        <div class="subAgeSection">
+          <img src="/importicons/calendar-event.svg" class="calendar">
+          <div class="yearSection">
+            <h1 id="age">-</h1>&nbsp;&nbsp;years
+          </div>
+          <div class="monthPDays">
+            <div class="emptyDiv">
+              <text id="month">-</text><text>Months</text>
+
+              <div class="lineMonDay"></div>
+
+              <text id="days">-</text><text>Days</text>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="leftAgeSection">
+          <img src="/importicons/cake.svg" class="cakeIcon">
+          <p>Next birthday in...</p>
+          <div class="leftMonthPDays">
+            <div class="emptyDiv">
+              <text id="leftMonth">-</text><text>Month</text>
+              <div class="lineMonDay"></div>
+              <text id="leftDays">-</text><text>Days</text>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="moreSection" id="clickMore">
+      <div class="barOne" id="bOne"></div>
+      <div class="barTwo" id="bTwo"></div>
+    </div>
+
+    <div class="resultOfSection-m" id="increaseHeight">
+      <div class="resultOfSection-s">
+        <div class="firstSection">
+          <div class="yearSectionS divClass">
+            <text>Years</text>
+            <br>
+            <div class="emptyDivSpace">
+              <text id="yearsSummary">20</text>
+            </div>
+          </div>
+          <div class="verticalLine"></div>
+          <div class="monthSectionS divClass">
+            <text>Months</text>
+            <br>
+            <div class="emptyDivSpace">
+              <text id="monthSummary">2000</text>
+            </div>
+          </div>
+          <div class="verticalLine"></div>
+          <div class="weekSectionS divClass">
+            <text>Weeks</text>
+            <br>
+            <div class="emptyDivSpace">
+              <text id="weeksSummary">20000</text>
+            </div>
+          </div>
+        </div>
+        <div class="secondSection firstSection">
+          <div class="yearSectionS divClass">
+            <text>Days</text>
+            <br>
+            <div class="emptyDivSpace">
+              <text id="daysSummary">200</text>
+            </div>
+          </div>
+          <div class="verticalLine"></div>
+          <div class="monthSectionS divClass">
+            <text>Hours</text>
+            <br>
+            <div class="emptyDivSpace">
+              <text id="hoursSummary">2000</text>
+            </div>
+          </div>
+          <div class="verticalLine"></div>
+          <div class="weekSectionS divClass">
+            <text>Minutes</text>
+            <br>
+            <div class="emptyDivSpace">
+              <text id="minuteSummary">200000000</text>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="happyBirthDayGreet-m" id="toGreet">
+    <div class="happyBirthDayGreet-s">
+      <div class="extraDiv">
+       <video autoplay muted loop id="vid">
+         <source src="/images/VID_20220610122254.mp4">
+       </video>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/index.js"></script>
+</body>
+
+</html>

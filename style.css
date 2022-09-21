@@ -1,0 +1,307 @@
+@font-face {
+  font-family: RadioCanada;
+  src: url("/fonts/RadioCanada-Regular.ttf");
+}
+
+* {
+  font-family: RadioCanada;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #24C999;
+  --secondary: #C97C24;
+}
+
+body {
+  background: #000;
+  text-align: center;
+}
+
+.h1 {
+  color: #42445A00;
+  -webkit-background-clip: text;
+  background-image: url("/images/layered-waves-haikei(3).png");
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  animation: position 15s linear infinite;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+@keyframes position {
+  0% {
+    background-position: 00% 00%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 00% 00%;
+  }
+}
+
+.divMain-hd {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.subDiv-hd {
+  width: 90%;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: .1px .1px 10px #5B5B5B;
+  color: #fff;
+}
+
+.date {
+  width: 80%;
+  height: 25px;
+  outline: none;
+  background: none;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+}
+
+.button {
+  margin: 25px 0 0 0;
+}
+
+.submit {
+  width: 50%;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid var(--main-color);
+  background: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: .1px .1px 3px var(--main-color) inset;
+}
+
+.emptySpan:after {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 100px;
+  background: var(--main-color);
+  left: 0;
+  top: 0;
+  transform: rotate(-25deg) translateY(-60px) translateX(-160px);
+  transition: 0.3s linear;
+  z-index: -1;
+  box-shadow: .1px .1px 10px var(--main-color);
+}
+
+.submit:hover .emptySpan:after {
+  transform: rotate(-25deg) translateY(-30px) translateX(0);
+}
+
+.resultDiv-m {
+  width: 100%;
+  height: 180px;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.resultDiv-s {
+  width: 90%;
+  height: 170px;
+  box-shadow: .1px .1px 10px #5B5B5B;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.subAgeSection {
+  width: 150px;
+}
+.monthPDays {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#age {
+  font-size: 3.5rem;
+  color: var(--main-color);
+}
+
+#month,
+#days,
+#leftMonth,
+#leftDays {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.lineMonDay {
+  width: 100px;
+  height: 2px;
+  background: #848484;
+}
+.calendar {
+  width: 20px;
+  height: 20px;
+  background: var(--main-color);
+  padding: 5px;
+  margin: 5px 0 -10px 0;
+  border-radius: 50%;
+}
+.yearSection {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+
+.line {
+  width: 1px;
+  height: 100%;
+  background: #1C1C1C;
+}
+
+.leftAgeSection {
+  width: 150px;
+}
+.cakeIcon {
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--main-color);
+  margin: 15px 0 10px 0;
+  border-radius: 50%;
+}
+.leftMonthPDays {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 0 0;
+}
+
+.moreSection {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barOne,.barTwo {
+  width: 25px;
+  height: 3px;
+  background: var(--main-color);
+  border-radius: 5px;
+  transform: rotate(35deg);
+  transition: .100s;
+  box-shadow: .1px .1px 5px #898989;
+}
+.barOne {
+  margin: 0 -3.5px 0 0;
+}
+.barTwo {
+  transform: rotate(-35deg);
+  margin: 0 0 0 -3.5px;
+}
+.barOneTransform {
+  transform: rotate(-35deg);
+}
+.barTwoTransform {
+  transform: rotate(35deg);
+}
+.resultOfSection-m {
+  width: 100%;
+  height: 0px;/*200*/
+  margin: 0 0 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.1s;
+}
+.resultOfSection-s {
+  width: 90%;
+  height: 180px;/*180*/
+}
+.firstSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;/*90*/
+  margin: 0px 0 0px 0;
+  border: 0.5px solid #5A5A5A;
+  color: #fff;
+  border-radius: 5px;
+}
+.verticalLine {
+  width: 0.5px;
+  height: 100%;
+  background: #5A5A5A;
+}
+#yearsSummary,
+#monthSummary,
+#weeksSummary,
+#daysSummary,
+#hoursSummary,
+#minuteSummary {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  min-width: 200px;
+}
+#hoursSummary,
+#minuteSummary {
+  font-size: 1rem;
+}
+.divClass {
+  width: 100px;
+}
+.emptyDivSpace {
+  width: 100px;
+  word-wrap: break-word;
+}
+.incHeight {
+  height: 200px;
+}
+.happyBirthDayGreet-m {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: #000000CF;
+  top: 0;
+  z-index: 555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: 0.8s;
+}
+.happyBirthDayGreet-s {
+  z-index: 55;
+  height: 150px;
+  width: 150px;
+  background: var(--main-color);
+  border-radius: 50%;
+  box-shadow: .1px .1px 15px var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greet {
+  transform: translateY(0);
+}
